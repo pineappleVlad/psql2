@@ -1,0 +1,18 @@
+SELECT Name_album, Year_of_issue FROM Album
+WHERE year_of_issue = 2018;
+
+SELECT Name_track, Duration FROM Track
+ORDER BY duration 
+LIMIT 1;
+
+SELECT Name_track FROM Track 
+WHERE Duration >= 210;
+
+SELECT Name_collection FROM Collection 
+WHERE Year_of_issue BETWEEN 2018 AND 2020;
+
+SELECT Name FROM Musician 
+WHERE Name NOT LIKE '% %';
+
+SELECT Name_track FROM Track 
+WHERE Name_track LIKE '%%My%%' OR Name_track LIKE '%%Мой%%';
